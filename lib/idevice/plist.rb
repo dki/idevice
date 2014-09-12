@@ -50,7 +50,7 @@ end
 # to a libplist plist_t object
 module PlistToPointer
   def to_plist_t
-    ::Plist.xml_to_pointer(self.to_plist)
+    ::Plist.binary_to_pointer(self.to_plist)
   end
 end
 
